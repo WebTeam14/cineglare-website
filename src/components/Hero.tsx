@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-bg.jpg";
+import heroBackground from "@/assets/HomeVid-2.mp4";
 
 const Hero = () => {
   return (
@@ -14,7 +14,19 @@ const Hero = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/70" />
-      </div>
+      </div>{/* Background Video with Overlay */}
+<div className="absolute inset-0 z-0 overflow-hidden">
+  <video
+    src={heroBackground}
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  />
+  {/* Optional dark overlay for better text contrast */}
+  <div className="absolute inset-0 bg-black/40"></div>
+</div>
 
       {/* Content */}
       {/* <div className="container-custom relative z-10 py-10">
