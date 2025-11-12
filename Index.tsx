@@ -10,6 +10,7 @@ import Blog from "@/components/Blog";
 import ProjectHighlights from "@/components/ProjectHighlights";
 import InsightsandImpact from "@/components/InsightsandImpact";
 import Different from "@/components/Different";
+import Slider from "@/components/slider";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
         <CTA />
         <Impact />
         <Blog />
+        <Slider />
         <ProjectHighlights />
         <Different />
         <InsightsandImpact />
