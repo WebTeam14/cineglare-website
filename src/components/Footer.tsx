@@ -1,21 +1,23 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import logo from "@/assets/logo.jpeg";
+// import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logoMain.png";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", path: "/home" },
+    { name: "About Us", path: "/about" },
+    // { name: "Services", href: "#services" },
+    { name: "Portfolio", path: "#portfolio" },
+    { name: "Contact", path: "#contact" },
   ];
 
   return (
     <footer id="contact" className="bg-card border-t border-border">
-  <div className="container-custom py-16">
+  <div className="pr-20 pl-20 pt-10 pb-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
       {/* Brand */}
       <div>
@@ -30,7 +32,7 @@ const Footer = () => {
           {/* Optional text next to logo */}
           {/* <span className="text-xl font-bold text-foreground">CineGlare</span> */}
         </div>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-4 bg-black">
               Crafting vision into reality. Where creativity meets execution — excellence takes center stage.
             </p>
             <div className="flex space-x-4">
@@ -53,7 +55,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
+              {/* {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
@@ -62,7 +64,32 @@ const Footer = () => {
                     {link.name}
                   </a>
                 </li>
-              ))}
+              ))} */}
+
+              {quickLinks.map((link) =>
+                            link.path.startsWith("#") ? (
+                              // ✅ Still use <a> for same-page anchors
+                              <li key={link.name}>
+                              <a
+                                key={link.name}
+                                href={link.path}
+                                className="text-foreground hover:text-primary transition-colors"
+                              >
+                                {">"} &nbsp; {link.name}
+                              </a></li>
+                            ) : (
+                              // ✅ Use <Link> for React Router navigation
+                              <li key={link.name} >
+                              <Link
+                                key={link.name}
+                                to={link.path}
+                                className="text-foreground hover:text-primary transition-colors"
+                              >
+                                {">"} &nbsp; {link.name}
+                              </Link>
+                              </li>
+                            )
+                          )}
             </ul>
           </div>
 
@@ -99,9 +126,18 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 text-center">
-          <p className="text-muted-foreground">
+          <div className="flex flex-row justify-between items-start mb-16">
+          <div className="basis-1/3">
+          <p className="text-muted-foreground bg-black">
             © 2025 CineGlare — Crafting Vision into Reality. All rights reserved.
           </p>
+          </div>
+          <div className="basis-2/3 flex justify-end">
+          <p className="text-muted-foreground max-w-3xl">
+            Terms & Conditions | Privacy Policy | Help
+          </p></div>
+        </div>
+          
         </div>
       </div>
     </footer>
