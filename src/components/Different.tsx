@@ -1,4 +1,5 @@
 import differentiatorsBg from "@/assets/differentiators-bg.jpg";
+import StatsCounter from "./StatsCounter";
 
 const Different = () => {
   return (
@@ -54,17 +55,20 @@ const Different = () => {
 
           {/* Right Side - Statistics */}
           <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-end">
-            <div className="text-center">
-              <h3 className="text-7xl md:text-8xl font-bold text-foreground mb-2">
-                132<span className="text-primary">+</span>
-              </h3>
-              <p className="text-muted-foreground text-lg">Projects Completed</p>
+            <div className="text-center bg-black text-white">
+              {/* <h3 className="text-7xl md:text-8xl font-bold text-foreground mb-2"> */}
+                <StatsCounter end={132} label="Projects Completed" />
+                {/* 132<span className="text-primary">+</span> */}
+              {/* </h3> */}
+              {/* <p className="text-muted-foreground text-lg">Projects Completed</p> */}
             </div>
-            <div className="text-center">
-              <h3 className="text-7xl md:text-8xl font-bold text-foreground mb-2">
-                84<span className="text-primary">+</span>
-              </h3>
-              <p className="text-muted-foreground text-lg">Happy Clients</p>
+            <div className="text-center bg-black text-white">
+              {/* <h3 className="text-7xl md:text-8xl font-bold text-foreground mb-2"> */}
+                                <StatsCounter end={84} label="Happy Clients" />
+
+                {/* 84<span className="text-primary">+</span> */}
+              {/* </h3> */}
+              {/* <p className="text-muted-foreground text-lg">Happy Clients</p> */}
             </div>
           </div>
         </div>
