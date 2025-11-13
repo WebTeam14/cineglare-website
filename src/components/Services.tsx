@@ -35,15 +35,20 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-background w-full">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Service we deliver
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 px-2 md:px-6 lg:px-10 mb-10">
+          <div className="relative flex text-left">
+            <h2 className="text-4xl md:text-5xl text-left font-bold text-foreground mb-4">
+            Services we deliver
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We elevate brands with star-powered influence, unforgettable experiences, and cinematic storytelling — delivering strategic, flawless execution that transforms brands into icons.
+          </div>
+
+          <div className="pr-2 md:pr-6 lg:pr-10">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto whitespace-nowrap">
+            We elevate brands with star-powered influence, unforgettable experiences, and cinematic <br /> storytelling — delivering strategic, flawless execution that transforms brands into icons.
           </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -62,6 +67,47 @@ const Services = () => {
         </div>
       </div>
     </section>
+
+//     <section id="services" className="py-20 bg-background w-full">
+//   {/* Full-width heading + description */}
+//   <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mb-12 px-24 lg:px-32">
+//     {/* Left Heading */}
+//     <div className="text-left">
+//       <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+//         Services we deliver
+//       </h2>
+//     </div>
+
+//     {/* Right Description */}
+//     <div>
+//       <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
+//         We elevate brands with star-powered influence, unforgettable experiences,
+//         and cinematic storytelling — delivering strategic, flawless execution
+//         that transforms brands into icons.
+//       </p>
+//     </div>
+//   </div>
+
+//   {/* Services Grid */}
+//   <div className="w-full px-8 lg:px-16">
+//     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+//       {services.map((service, index) => (
+//         <div
+//           key={index}
+//           className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-all group hover:shadow-lg hover:shadow-primary/10"
+//         >
+//           <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all">
+//             <service.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
+//           </div>
+//           <h3 className="text-xl font-bold text-foreground mb-4">{service.title}</h3>
+//           <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// </section>
+
+
   );
 };
 

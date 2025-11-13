@@ -15,12 +15,14 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-secondary/30">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="about" className="py-20 bg-secondary/30 w-full">
+      {/* <div className="container-custom"> */}
+        {/* <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16"> */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center "> */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 px-6 md:px-12 lg:px-20">
           {/* Image */}
-          <div className="relative">
-            <div className="relative rounded-lg overflow-hidden">
+          <div className="relative flex justify-center">
+            <div className="relative rounded-lg overflow-hidden max-w-[550px] w-full">
               <img
                 src={aboutImage}
                 alt="Cineglare team celebrating"
@@ -30,14 +32,14 @@ const About = () => {
           </div>
 
           {/* Content */}
-          <div>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+          <div className="pr-6 md:pr-12 lg:pr-20">
+            <p className="text-xl text-white text-muted-foreground mb-6 leading-relaxed">
               About Cineglare
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Crafting vision into realitty
             </h2>
-            <p className="text-md text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-md text-white text-muted-foreground mb-6 leading-relaxed">
               Cineglare is a creative powerhouse driving brands into the
               spotlight through star influence, cinematic storytelling, and
               unforgettable experiential events. With global reach and
@@ -77,7 +79,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

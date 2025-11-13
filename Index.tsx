@@ -22,7 +22,6 @@ const Index = () => {
         <Services />
         <CTA />
         <Impact />
-        <Blog />
         <ProjectHighlights />
         <Different />
         <InsightsandImpact />

@@ -96,7 +96,7 @@ const AboutUs = () => {
   {/* Founder & MD */}
   <div className="flex flex-col md:flex-row items-center bg-gradient-to-br from-[#3b0000] via-[#1a0000] to-black border border-[#5c0000]/50 p-8 rounded-2xl shadow-lg hover:shadow-red-900/40 hover:border-red-800/70 transition-all duration-500">
     <div className="text-center md:text-left">
-      <h3 className="text-2xl font-semibold text-[#ffffff]">Ram Viraj Singh</h3>
+      <h3 className="text-2xl font-semibold text-[#ffffff]">Ram Vijay Singh</h3>
       <p className="text-gray-300 text-sm font-medium">Founder & Managing Director</p>
       <p className="mt-3 text-sm text-gray-400 leading-relaxed">
         With visionary leadership and creative foresight, he has built Cineglare into
