@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import productBrandingImage from "@/assets/product-branding-image.jpg";
+import servicesCenterOne from "@/assets/services-center-1.png";
 
 const ProductBranding = () => {
   const leftServices = [
@@ -26,13 +28,14 @@ const ProductBranding = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={productBrandingImage}
         title="Product Branding"
         tagline="We don't just name brands - we create legacies"
         description="We specialize in building brands that inspire trust, sparks emotions and drive engagement through innovative product branding
          to give your product a distinctive voice and Identity."
         leftServices={leftServices}
         rightServices={rightServices}
-        centerImage={digitalMarketingHero}
+        centerImage={servicesCenterOne}
         imageAlt="Digital marketing visualization"
       />
 

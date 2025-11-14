@@ -30,14 +30,14 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Featured Post */}
-          <div className="relative group">
-            <div className="relative overflow-hidden rounded-lg">
+          <div className="relative group animate-fade-in">
+            <div className="relative overflow-hidden rounded-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
               <img
                 src={blogFeatured}
                 alt="Reputation Under Fire: The Art of Managing a Brand Crisis"
-                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4 bg-primary px-4 py-2 rounded">
+              <div className="absolute top-4 left-4 bg-primary px-4 py-2 rounded group-hover:scale-110 transition-transform duration-300">
                 <div className="text-primary-foreground font-bold text-lg">02</div>
                 <div className="text-primary-foreground text-xs">Sep</div>
               </div>
@@ -53,7 +53,7 @@ const Blog = () => {
                   <span>0</span>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                 Reputation Under Fire: The Art of Managing a Brand Crisis
               </h3>
               <Button variant="default" size="sm">
@@ -67,17 +67,17 @@ const Blog = () => {
             {blogPosts.map((post, index) => (
               <div
                 key={index}
-                className="flex gap-4 group cursor-pointer hover:bg-card/50 p-4 rounded-lg transition-colors"
-              >
-                <div className="flex-shrink-0 w-32 h-24 overflow-hidden rounded-lg">
+                className="flex gap-4 group cursor-pointer hover:bg-card/50 p-4 rounded-lg transition-all duration-300 hover:-translate-x-2 animate-fade-in"
+              style={{ animationDelay: `${(index + 1) * 150}ms` }} >
+                <div className="flex-shrink-0 w-32 h-24 overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-shadow duration-300">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-foreground font-semibold leading-tight group-hover:text-primary transition-colors">
+                  <h4 className="text-foreground font-semibold leading-tight group-hover:text-primary transition-colors duration-300">
                     {post.title}
                   </h4>
                 </div>

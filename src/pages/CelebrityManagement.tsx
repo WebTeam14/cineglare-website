@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import celebrityManagementImage from "@/assets/celebrity-management-image.jpg"
 
 const CelebrityManagement = () => {
   const leftServices = [
@@ -26,6 +27,7 @@ const CelebrityManagement = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={celebrityManagementImage}
         title="Celebrity Management"
         tagline="Where Star Power Meets Strategy"
         description="We strategically position talent across media platforms, endorsements, events and campaigns - aligining perfectly with

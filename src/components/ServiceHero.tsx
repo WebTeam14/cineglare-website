@@ -1,4 +1,5 @@
 interface ServiceHeroProps {
+  firstBgImage: string;
   title: string;
   tagline: string;
   description: string;
@@ -9,6 +10,7 @@ interface ServiceHeroProps {
 }
 
 const ServiceHero = ({
+  firstBgImage,
   title,
   tagline,
   description,
@@ -74,19 +76,22 @@ const ServiceHero = ({
     
 <section className="w-full">
   {/* Top Gray Section */}
-  <div className="w-full bg-gradient-to-b from-gray-300 via-gray-200 to-gray-100">
-    <div className="h-[150px]"></div>
+  <div className="w-full bg-gradient-to-b from-gray-300 via-gray-200 to-gray-100 bg-fixed bg-cover bg-center" 
+  style={{
+    backgroundImage: `url(${firstBgImage})`,
+  }}>
+    <div className="h-[240px]"></div>
     <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-48 pb-4">
       <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-6">
         {/* Left Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 lg:col-span-2">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-black lg:col-span-2">
           {title}
         </h1>
 
         {/* Right Tagline */}
         <div className="flex justify-start lg:justify-end">
-          <div className="bg-gray-900 text-white px-8 py-3 rounded-full shadow-md">
-            <h2 className="text-base md:text-lg font-semibold text-center">
+          <div className="bg-black text-white px-8 py-3 rounded-full shadow-md">
+            <h2 className="text-base md:text-lg font-semibold text-center md:whitespace-nowrap">
               {tagline}
             </h2>
           </div>
@@ -99,7 +104,7 @@ const ServiceHero = ({
   <div className="w-full bg-white">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-10 pb-20">
       {/* Description */}
-      <p className="text-center text-gray-800 text-lg md:text-xl mb-16 max-w-5xl mx-auto leading-relaxed">
+      <p className="text-center text-gray-800 text-sm md:text-md mb-16 max-w-5xl mx-auto leading-relaxed">
         {description}
       </p>
 

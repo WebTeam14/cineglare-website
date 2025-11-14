@@ -35,7 +35,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-background w-full">
+    <section id="services" className="py-20 bg-black w-full">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 px-2 md:px-6 lg:px-10 mb-10">
           <div className="relative flex text-left">
@@ -55,12 +55,14 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-all group hover:shadow-lg hover:shadow-primary/10"
-            >
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all">
-                <service.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
+              className="bg-card border border-none p-8 hover:border-primary 
+              transition-all group hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-2 animate-fade-in"
+            style={{ animationDelay: `${index * 100}ms` }} >
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 
+              group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                <service.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">{service.title}</h3>
+              <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">{service.title}</h3>
               <p className="text-muted-foreground">{service.description}</p>
             </div>
           ))}

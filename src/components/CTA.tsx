@@ -18,7 +18,7 @@ const CTA = () => {
 
       {/* Content */}
       <div className="container-custom relative z-10 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 bg-black pt-8 pb-8 rounded-full">
+        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 bg-none pt-8 pb-8 rounded-full">
           Partner With Us to Make Your Vision Real
         </h2>
         {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">

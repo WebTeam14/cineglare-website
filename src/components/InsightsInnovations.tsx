@@ -110,7 +110,7 @@ const InsightsInnovations = ({ sectionTwoTitle, sectionThreeTitle }: InsightsInn
 
       {/* Content */}
       <div className="container-custom relative z-10 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-foreground bg-black mb-10 pt-8 pb-8 rounded-full">
+        <h2 className="text-3xl md:text-5xl font-bold text-foreground bg-none mb-6 rounded-full">
           {sectionThreeTitle}
         </h2>
         <Button variant="default" size="lg" className="px-8">

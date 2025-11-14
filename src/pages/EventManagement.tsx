@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import eventManagementImage from "@/assets/event-management-image.jpg";
 
 const EventManagement = () => {
   const leftServices = [
@@ -26,6 +27,7 @@ const EventManagement = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={eventManagementImage}
         title="Event Management"
         tagline="Turning Moments into Milestone"
         description="From Red Carpets to Corporate Stages, we create moments blending strategic planning, innovative design and flawless 

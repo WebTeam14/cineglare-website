@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import filAndAdproductionImage from "@/assets/film-and-ad-production-image.jpg";
 
 const FilmAndAdProduction = () => {
   const leftServices = [
@@ -26,6 +27,7 @@ const FilmAndAdProduction = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={filAndAdproductionImage}
         title="Film and Ad Production"
         tagline="Turning Concepts into Cinematic Reality"
         description="From concepts to screen, we handle every stage - combining cinematic excellence with marketing insight, that inspire, 

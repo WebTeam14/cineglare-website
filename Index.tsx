@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import CTA from "@/components/CTA";
 import Impact from "@/components/Impact";
 import Footer from "@/components/Footer";
-import Blog from "@/components/Blog";
 import ProjectHighlights from "@/components/ProjectHighlights";
 import InsightsandImpact from "@/components/InsightsandImpact";
 import Different from "@/components/Different";
@@ -23,11 +22,10 @@ const Index = () => {
         <Services />
         <CTA />
         <Impact />
-        <Blog />
-        <Slider />
         <ProjectHighlights />
         <Different />
         <InsightsandImpact />
+        <Slider />
       </main>
       <Footer />
     </div>

@@ -4,7 +4,7 @@ import project3 from "@/assets/project-3.jpg";
 
 const ProjectHighlights = () => {
   return (
-    <section id="portfolio" className="py-20 bg-secondary/30">
+    <section id="portfolio" className="py-20 bg-black">
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
           Project Highlights
@@ -23,7 +23,9 @@ const ProjectHighlights = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-          <div className="relative overflow-hidden rounded-lg group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg group cursor-pointer 
+          shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2 animate-fade-in" 
+          style={{ animationDelay: '150ms' }} >
             <img
               src={project2}
               alt="Elegant celebration with confetti"
@@ -32,7 +34,9 @@ const ProjectHighlights = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-          <div className="relative overflow-hidden rounded-lg group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg group cursor-pointer 
+          shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2 animate-fade-in" 
+          style={{ animationDelay: '300ms' }} >
             <img
               src={project3}
               alt="Evening event with warm lighting"

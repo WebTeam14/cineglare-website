@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <nav className="container-custom py-4">
+      <nav className="pr-20 pl-20 pt-5 pb-4">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
@@ -48,7 +48,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-14">
             {/* {navLinks.map((link) => (
               <a
                 key={link.name}

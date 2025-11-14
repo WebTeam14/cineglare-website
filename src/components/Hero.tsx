@@ -48,15 +48,15 @@ const Hero = () => {
   <p className="text-primary text-md md:text-base font-large mb-4 tracking-wider bg-black text-white rounded-full p-4 inline-block">
     Crafting vision into reality
   </p>
-  <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-6 leading-tight">
+  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
     Experience Events<br />Like Never Before.
   </h1>
-  <p className="text-muted-foreground text-md md:text-lg max-w-2xl mb-8">
+  <p className="text-muted-foreground text-sm md:text-md max-w-2xl mb-8 text-white">
     We are a team of creative thinkers, strategists, and innovators — delivering impactful and unforgettable experiences.
   </p>
-  <Button variant="default" size="lg" className="px-8">
+  {/* <Button variant="default" size="lg" className="px-8">
     Our Services
-  </Button>
+  </Button> */}
 </div>
     </section>
   );

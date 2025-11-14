@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import digitalMarketingImage from "@/assets/digital-marketing-image.jpg";
 
 const DigitalMarketing = () => {
   const leftServices = [
@@ -26,6 +27,7 @@ const DigitalMarketing = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={digitalMarketingImage}
         title="Digital Marketing"
         tagline="Digital Brilliance with a Global Pulse"
         description="From creative storytelling to data driven strategies, we focus on brand identity, driving visibility, blending innovation and insight to make every click count."

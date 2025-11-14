@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
 import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import filmPromotionImage from"@/assets/fil-promotion-image.jpg";
 
 const FilmPromotion = () => {
   const leftServices = [
@@ -26,6 +27,7 @@ const FilmPromotion = () => {
       <Header />
       
       <ServiceHero
+        firstBgImage={filmPromotionImage}
         title="Film Promotion"
         tagline="Promotions that Move Hearts and Fill Theatres"
         description="Through a mix of creative storytelling, digital innovation and event excellence, we ensure your film stands out - 
