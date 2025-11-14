@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import aboutHero from "@/assets/leader.jpg";
+import aboutHero from "@/assets/AboutHero.png";
 import teamworkStructure from "@/assets/teamwork.jpg";
 import { Monitor, Lightbulb, Globe } from "lucide-react";
 import csrCommunity from "@/assets/communitygrowth.jpg";
@@ -15,12 +15,13 @@ const AboutUs = () => {
 
       <main className="overflow-hidden">
         {/* ---------------------- HERO SECTION ---------------------- */}
-        <section className="relative flex items-center h-[70vh] md:h-[100vh] overflow-hidden">
+        <section className="relative flex items-center h-[70vh] md:h-[90vh] overflow-hidden">
           <img
             src={aboutHero}
             alt="Professional team member"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-50 object-cover"
           />
+
           <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-transparent" />
 
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 text-right max-w-[90%] md:max-w-3xl">
@@ -31,7 +32,7 @@ const AboutUs = () => {
         </section>
 
         {/* ---------------------- COMPANY OVERVIEW ---------------------- */}
-        <section className="py-20 bg-background">
+        <section className="py-10 bg-background">
           <div className="w-full px-6 md:px-20 text-gray-200 text-base md:text-lg leading-relaxed space-y-6">
             <p>
               <span className="font-semibold text-[#800000]">Cineglare</span> is an ISO 9001:2015 certified company,
@@ -223,7 +224,7 @@ const AboutUs = () => {
                   <Monitor className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-2">INNOVATION</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">INNOVATION</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Powered by <span className="font-semibold">AI and creativity</span>, we craft smarter, faster,
                     and more impactful brand experiences by blending <span className="font-semibold">art, intelligence, and technology</span>.
@@ -237,7 +238,7 @@ const AboutUs = () => {
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-2">INTEGRITY</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">INTEGRITY</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Where creativity meets strategy to build powerful brands and unforgettable experiences driven by{" "}
                     <span className="font-semibold">innovation and global expertise</span>.
@@ -251,7 +252,7 @@ const AboutUs = () => {
                   <Globe className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-2">PASSIONATE</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">PASSIONATE</h3>
                   <p className="text-gray-700 leading-relaxed">
                     We pour heart, energy, and imagination into every project — turning passion into powerful brand
                     stories that inspire.
