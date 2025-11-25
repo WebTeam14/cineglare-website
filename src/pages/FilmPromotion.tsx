@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
-import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
-import filmPromotionImage from"@/assets/fil-promotion-image.jpg";
+import filmPromotionImage from "@/assets/fil-promotion-image.jpg";
+import filmPromotionCenter from "@/assets/film-promotion-center.jpg";
 
 const FilmPromotion = () => {
   const leftServices = [
@@ -34,7 +34,7 @@ const FilmPromotion = () => {
         on screen and beyond."
         leftServices={leftServices}
         rightServices={rightServices}
-        centerImage={digitalMarketingHero}
+        centerImage={filmPromotionCenter}
         imageAlt="Digital marketing visualization"
       />
 

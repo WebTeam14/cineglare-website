@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
-import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
 import eventManagementImage from "@/assets/event-management-image.jpg";
+import eventManagementCenter from "@/assets/event-management-center.jpg";
 
 const EventManagement = () => {
   const leftServices = [
@@ -34,7 +34,7 @@ const EventManagement = () => {
         execution to transform vision into reality."
         leftServices={leftServices}
         rightServices={rightServices}
-        centerImage={digitalMarketingHero}
+        centerImage={eventManagementCenter}
         imageAlt="Digital marketing visualization"
       />
 

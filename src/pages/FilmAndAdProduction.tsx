@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
-import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+// import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
 import filAndAdproductionImage from "@/assets/film-and-ad-production-image.jpg";
+import filmAdProductionCenter from "@/assets/film-and-ad-production-center.jpg";
 
 const FilmAndAdProduction = () => {
   const leftServices = [
@@ -34,7 +35,7 @@ const FilmAndAdProduction = () => {
         influence and build brand emotion."
         leftServices={leftServices}
         rightServices={rightServices}
-        centerImage={digitalMarketingHero}
+        centerImage={filmAdProductionCenter}
         imageAlt="Digital marketing visualization"
       />
 
