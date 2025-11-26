@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import I1 from "@/assets/logos/I1.png";
 import I2 from "@/assets/logos/I2.png";
 import I3 from "@/assets/logos/I3.png";
@@ -14,7 +15,7 @@ import I12 from "@/assets/logos/I12.png";
 import I13 from "@/assets/logos/I13.png";
 import I14 from "@/assets/logos/I14.png";
 import I15 from "@/assets/logos/I15.png";
-import I16 from "@/assets/logos/I6.png";
+import I16 from "@/assets/logos/I16.png";
 import I17 from "@/assets/logos/I17.png";
 import I18 from "@/assets/logos/I18.png";
 import I19 from "@/assets/logos/I19.png";
@@ -45,39 +46,37 @@ import I43 from "@/assets/logos/I43.png";
 import I44 from "@/assets/logos/I44.png";
 import I45 from "@/assets/logos/I45.png";
 
-
-
-
-
+const logos = [
+  I1, I2, I3, I4, I5, I6, I7, I8, I9, I10,
+  I11, I12, I13, I14, I15, I16, I17, I18, I19, I20,
+  I21, I22, I23, I24, I25, I26, I27, I28, I29, I30,
+  I31, I32, I33, I34, I35, I36, I37, I38, I39, I40,
+  I41, I42, I43, I44, I45,
+];
 
 const PartnerSlider = () => {
-  const logos = [I1, I2, I3, I4, I5, I6,I7,I8,I9,I10, I11, I12, I13, I14, I15, I16, I17, I18, I19, I20, I21, I22, I23, I24, I25, I26, I27, I28, I29, I30, I31, I32, I33, I34, I35, I36, I37, I38, I39, I40, I41, I42, I43, I44, I45  ]
-
   return (
-    <section className="py-12 bg-gradient-to-r from-[#1a0000] via-black to-[#000000] text-white overflow-hidden">
-      <div className="text-center mb-8">
-        <h3 className="text-left-lg sm:text-xl font-medium text-gray-300">
-          Our Optimistic Partner & Sponsor:
-        </h3>
-      </div>
+    <section className="py-12 bg-gradient-to-r from-[#1a0000] via-black to-[#000000] text-white">
+      <h3 className="text-xl font-medium text-gray-300 text-center mb-6">
+        Our Optimistic Partner & Sponsor
+      </h3>
 
-      {/* Slider Container */}
-      <div className="relative w-full overflow-hidden">
+      <div className="overflow-hidden w-full">
         <motion.div
-          className="flex space-x-16 items-center"
+          className="flex items-center gap-10 min-w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
             ease: "linear",
-            duration: 20,
+            duration: 200,
           }}
         >
           {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}
               src={logo}
-              alt={`Partner ${index}`}
-              className="h-16 sm:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
+              alt={`Partner-${index}`}
+              className="h-14 sm:h-16 md:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
             />
           ))}
         </motion.div>
