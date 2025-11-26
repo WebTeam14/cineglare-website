@@ -123,11 +123,11 @@ const ServiceHero = ({
         </div>
 
         {/* Center Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <img
             src={centerImage}
             alt={imageAlt}
-            className="w-full max-w-[180px] h-auto object-contain opacity-90"
+            className="w-full max-w-[300px] h-auto object-contain opacity-90"
           />
         </div>
 

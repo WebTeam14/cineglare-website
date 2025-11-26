@@ -17,8 +17,8 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="bg-card border-t border-border">
-  <div className="pr-20 pl-20 pt-10 pb-4">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+  <div className="pr-20 pl-20 pt-10 pb-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
       {/* Brand */}
       <div>
         <div className="flex items-center space-x-3 mb-4">
@@ -128,12 +128,12 @@ const Footer = () => {
         <div className="border-t border-border pt-4 text-center">
           <div className="flex flex-row justify-between items-start">
           <div className="basis-1/3">
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             © 2025 CineGlare — Crafting Vision into Reality. All rights reserved.
           </p>
           </div>
           <div className="basis-2/3 flex justify-end">
-          <p className="text-muted-foreground max-w-3xl">
+          <p className="text-muted-foreground max-w-3xl text-sm">
             Terms & Conditions | Privacy Policy | Help
           </p></div>
         </div>

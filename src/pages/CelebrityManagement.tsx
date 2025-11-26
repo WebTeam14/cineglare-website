@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InsightsInnovations from "@/components/InsightsInnovations";
 import ServiceHero from "@/components/ServiceHero";
-import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
-import celebrityManagementImage from "@/assets/celebrity-management-image.jpg"
+// import digitalMarketingHero from "@/assets/digital-marketing-hero.jpg";
+import celebrityManagementImage from "@/assets/celebrity-management-image.jpg";
+import celebrityManagementCenter from "@/assets/celebrity-management-center.jpg";
 
 const CelebrityManagement = () => {
   const leftServices = [
@@ -34,7 +35,7 @@ const CelebrityManagement = () => {
          the brand's vision and audiences."
         leftServices={leftServices}
         rightServices={rightServices}
-        centerImage={digitalMarketingHero}
+        centerImage={celebrityManagementCenter}
         imageAlt="Digital marketing visualization"
       />
 

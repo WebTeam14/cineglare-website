@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import aboutImage from "@/assets/about-image.jpg";
+// import aboutImage from "@/assets/about-image.jpg";
+import aboutUsImage from "@/assets/Cineglare Trans Logo.jpg";
 
 const highlights = [
   "Star Influence",
@@ -19,12 +20,13 @@ const About = () => {
       {/* <div className="container-custom"> */}
         {/* <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16"> */}
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center "> */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-2 px-6 md:px-12 lg:px-20">
           {/* Image */}
           <div className="relative flex justify-center">
-            <div className="relative rounded-lg overflow-hidden max-w-[550px] w-full">
+            {/* <div className="relative rounded-lg overflow-hidden max-w-[550px] w-full"> */}
+                        <div className="relative rounded-lg overflow-hidden w-full">
               <img
-                src={aboutImage}
+                src={aboutUsImage}
                 alt="Cineglare team celebrating"
                 className="w-full h-auto object-cover"
               />
