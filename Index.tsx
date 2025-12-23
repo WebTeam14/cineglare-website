@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import ProjectHighlights from "@/components/ProjectHighlights";
 import InsightsandImpact from "@/components/InsightsandImpact";
 import Different from "@/components/Different";
-import Slider from "@/components/slider";
+import Slider from "@/components/Slider";
 
 const Index = () => {
   return (

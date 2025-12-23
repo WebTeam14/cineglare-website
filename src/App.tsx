@@ -7,6 +7,8 @@ import Index from "../Index";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import DigitalMarketing from "./pages/DigitalMarketing";
 import ProductBranding from "./pages/ProductBranding";
 import CelebrityManagement from "./pages/CelebrityManagement";
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/services" element={ <Services /> } />
           <Route path="/aboutus" element={ <AboutUs />} />
+          <Route path="/portfolio" element={ <Portfolio /> } />
+          <Route path="/contact" element={ <Contact /> } />
           <Route path="/services/product-branding" element={ <ProductBranding /> } />
           <Route path="/services/celebrity-management" element={ <CelebrityManagement /> } />
           <Route path="/services/digital-marketing" element={ <DigitalMarketing /> } />
