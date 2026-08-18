@@ -50,7 +50,7 @@ export default function Portfolio() {
           <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-transparent" />
 
           <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 text-right max-w-[90%] md:max-w-3xl">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-[#fff4f4]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-[#fff4f4] font-cinematic animate-dynamic-hero">
               Events <span className="text-white"></span>
             </h1>
           </div>

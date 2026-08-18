@@ -84,7 +84,7 @@ const ServiceHero = ({
     <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 pt-48 pb-4">
       <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-6">
         {/* Left Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-black lg:col-span-2">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-black lg:col-span-2 font-cinematic animate-dynamic-hero">
           {title}
         </h1>
 

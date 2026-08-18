@@ -26,16 +26,16 @@ const App = () => (
       <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/services" element={ <Services /> } />
-          <Route path="/aboutus" element={ <AboutUs />} />
-          <Route path="/portfolio" element={ <Portfolio /> } />
-          <Route path="/contact" element={ <Contact /> } />
-          <Route path="/services/product-branding" element={ <ProductBranding /> } />
-          <Route path="/services/celebrity-management" element={ <CelebrityManagement /> } />
-          <Route path="/services/digital-marketing" element={ <DigitalMarketing /> } />
-          <Route path="/services/film-and-ad-production" element={ <FilmAndAdProduction /> } />
-          <Route path="/services/film-promotion" element={ <FilmPromotion /> } />
-          <Route path="/services/event-management" element={ <EventManagement /> } />
+          <Route path="/services" element={<Services />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services/product-branding" element={<ProductBranding />} />
+          <Route path="/services/celebrity-management" element={<CelebrityManagement />} />
+          <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/services/film-and-ad-production" element={<FilmAndAdProduction />} />
+          <Route path="/services/film-promotion" element={<FilmPromotion />} />
+          <Route path="/services/event-management" element={<EventManagement />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
